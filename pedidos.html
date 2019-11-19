@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+<head>
+  
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="pedidos.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="utf-8">
+
+</head>
+<body>
+
+  <div class="nav">
+    <div class="logo">
+      <img src="Imagenes/Importantes/logo.png" alt="logo">
+    </div>
+    <div class="navbar"> 
+    <a href="landing.html" >Inicio</a>
+    <a href="productos.html">Productos</a>
+    <a href="pedidos.html" style="color:#57DBE6">Pedidos</a>
+    <div class="dropdown">
+    <button class="dropbtn">Más 
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="quienesSomos.html">Quiénes somos</a>
+      <a href="novedades.html">Novedades</a>
+    </div>
+    </div> 
+    </div>
+  </div>
+
+<section>
+  <article>
+    <span class="titulo">PEDIDOS</span>
+     <div class="text">
+    <form action="pedido.asp" enctype="text/plain" method="get" name="solicitud" target="_blank">
+
+     <div class="izquierda">
+     <div class="cabecera"><label for="nombre">Nombre y Apellidos</label></div>
+     <input type="text" name="nombre" id="nombre" placeholder="ej: Andrea Casas García" required>
+
+     <div class="cabecera"><label for="dni">DNI</label></div>
+    <input type="text" name="dni" id="dni" placeholder="ej: 98351379K" required>
+
+     <div class="cabecera"><label for="correo">Correo Electrónico</label></div>
+    <input type="email" name="correo" id="correo" placeholder="ej: onsunglasses@gmail.com" required>
+
+     <div class="cabecera"><label for="direccion">Dirección</label></div>
+     <input type="text" name="nombre" id="direccion" placeholder="ej: Calle Alameda 34 1ºB 28821" required>
+
+     <div class="cabecera"><label for="ciudad">Ciudad</label></div>
+     <select NAME="ciudad" id="ciudad" required>
+     <option value="">Elige</option>
+     <option value=”Madrid”>Madrid</option>
+     <option value=”Valencia”> Valencia </option>
+     <option value=”Barcelona”> Barcelona </option> 
+     </select>
+
+     <div class="cabecera"><label for="pais">País</label></div>
+     <input type="text" name="pais" id="pais" placeholder="España" required>
+     
+
+     <div class="cabecera"><label for="cantidad">Cantidad</label></div>
+     <input type="number" name="cantidad" id="cantidad" placeholder="ej: 1" required>
+     </div>
+   
+     <div class="derecha">
+      
+    <div class="cabecera"><label for="telefono">Número de telefono</label></div>
+    <input type="text" name="telefono" id="telefono" placeholder="ej: 915678345" required>
+
+    <div class="cabecera"><label for="producto">Nombre del producto</label></div>
+    <input type="text" name="producto" id="producto" placeholder="ej: MASAI" required>
+
+    <div class="cabecera"><label for="color">Color del producto</label></div>
+    <input type="text" name="color" id="color" placeholder="ej: Negro" required>
+
+   <div class="cabecera"><label for="envio">Método de envío</label></div>
+    <input type="radio" name="envio" value="normal" id="envio"> Normal (Gratis)
+    <input type="radio" name="envio" value="premium"> Premium (10€)
+
+    <div class="cabecera"><label for="pago">Método de pago</div>
+     <input TYPE="radio" NAME="Contrareembolso" VALUE="Contrareembolso" id="pago" checked> Contrareembolso
+
+     <div class="checkb"><input type="checkbox" name="condiciones" required>Sí, he leído y acepto la política de privacidad.</div>
+    
+
+      <div class="botones">
+       <input type="reset" name="borrar" value="borrar">
+       <input type="submit" name="submit" value="confirmar">
+
+     </div>
+     </div>
+   </div>
+   <div class="clear"></div>
+    </form>
+
+
+</div>
+
+  </article>
+</section>
+
+  <footer>
+  <div class="columna">
+     <img src="Imagenes/Importantes/logo.png" alt="logo" class="logofooter">
+    © 2019 ON - Nicole Loupias
+  </div>
+  <div class="columna">
+    <span class="tituloColumna">SÍGUENOS</span>
+    <ul class="social-icons">
+        <li><a href="http://www.facebook.com" class="social-icon"> <i class="fa fa-facebook"></i></a></li>
+        <li><a href="http://www.twitter.com" class="social-icon"> <i class="fa fa-twitter"></i></a></li>
+        <li><a href="http://www.instagram.com" class="social-icon"> <i class="fa fa-instagram"></i></a></li>
+        <li><a href="http://www.youtube.com" class="social-icon"> <i class="fa fa-youtube"></i></a></li>
+    </ul>
+  </div>
+  <div class="columna">
+    <span class="tituloColumna">CONTACTA</span>
+  <p><img src="Imagenes/Extra/icons8-phone-100.png" alt="safe" class="telefono">
+    <span class="numero">915678345</span></p>
+  </div>
+</footer>
+
+</body>
+</html>
